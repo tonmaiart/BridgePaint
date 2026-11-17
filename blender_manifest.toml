@@ -1,0 +1,19 @@
+schema_version = "1.0.0"
+
+id = "paint_bridge"
+version = "0.1.0"
+name = "Paint Bridge"
+tagline = "Paint base color in an external app through layered PSD captures"
+maintainer = "Tomatactics"
+type = "add-on"
+tags = ["Paint", "Import-Export"]
+
+blender_version_min = "4.5.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+files = "Write PSD captures to the project folder and update texture files"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "/tests/"]
